@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tyermercado-portfolio/static/css/main.5c03f095.css",
+    "main.js": "/tyermercado-portfolio/static/js/main.55ca4093.js",
+    "static/media/Library.png": "/tyermercado-portfolio/static/media/Library.faabe1816de7e4d4cff5.png",
+    "static/media/Bicycle.png": "/tyermercado-portfolio/static/media/Bicycle.9f527427f708c1058d0e.png",
+    "static/media/sneakers_ecommerce.png": "/tyermercado-portfolio/static/media/sneakers_ecommerce.938ab2e45637aa420d07.png",
+    "static/media/tyer.png": "/tyermercado-portfolio/static/media/tyer.7f0a84a6f31f84ef77c3.png",
+    "static/media/Tyer_Leinster_Mercado_CV.pdf": "/tyermercado-portfolio/static/media/Tyer_Leinster_Mercado_CV.a58567d0d42849baca7d.pdf",
+    "static/media/home.jpg": "/tyermercado-portfolio/static/media/home.2e1ee389bb3d187d34a5.jpg",
+    "index.html": "/tyermercado-portfolio/index.html",
+    "main.5c03f095.css.map": "/tyermercado-portfolio/static/css/main.5c03f095.css.map",
+    "main.55ca4093.js.map": "/tyermercado-portfolio/static/js/main.55ca4093.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c03f095.css",
+    "static/js/main.55ca4093.js"
+  ]
+}

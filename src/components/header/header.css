@@ -49,12 +49,12 @@ header {
   padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
-.me > img {
+/* .me > img {
   width: 22rem; 
   height: 30rem;
   position: absolute;
   left: calc(55% - 11rem);
-}
+} */
 
 /* ========== SCROLL DOWN ========== */
 .scroll__down {
@@ -66,7 +66,7 @@ header {
   font-size: 0.9rem;
 }
 
-/* ========== MEDIA QUERIES (1080 x 1090) ========== */
+/* ========== MEDIA QUERIES (LARGE DEVICES) ========== */
 @media screen and (max-width: 1080px) and (max-height: 1090px) {
   header {
     height: 100vh; /* Adjust height as needed */
@@ -74,51 +74,28 @@ header {
     overflow: hidden;
   }
 
-  .header__container {
-    text-align: center;
-    height: 100%;
-    position: relative;
-  }
 
-  /* ========== CTA ========== */
-  .cta {
-    margin-top: 2rem; /* Adjust margin-top as needed */
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and(max-width: 1024px) {
+  header {
+    height: 68vh;
 
-/* ========== ME ========== */
-.me {
-  width: 90%; /* Adjust width for smaller screens */
-  height: auto; /* Make height auto to maintain aspect ratio */
-  max-width: 18rem; /* Limit max width for larger screens */
-  max-height: 25rem; /* Limit max height for larger screens */
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  top: 3rem; /* Adjust top positioning as needed */
-  border-radius: 50%; /* Make border-radius circular */
-  overflow: hidden;
-  padding: 1rem; /* Adjust padding as needed */
+  }
 }
 
-.me > img {
-  width: 100%; /* Make image width 100% of parent */
-  height: 100%; /* Make image height 100% of parent */
-  object-fit: cover; /* Maintain aspect ratio and cover container */
-}
+
+
 
  /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
  @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 100vh; /* Auto height for small devices */
   }
 
   .header__socials,
   .scroll__down {
     display: none;
   }
-}
 
+}
 }

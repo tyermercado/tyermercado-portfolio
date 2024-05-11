@@ -49,12 +49,12 @@ header {
   padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
-/* .me > img {
+.me > img {
   width: 22rem; 
   height: 30rem;
   position: absolute;
   left: calc(55% - 11rem);
-} */
+} 
 
 /* ========== SCROLL DOWN ========== */
 .scroll__down {
@@ -70,8 +70,8 @@ header {
 @media screen and (max-width: 1080px) and (max-height: 1090px) {
   header {
     height: 100vh; /* Adjust height as needed */
-    padding-top: 5rem; /* Adjust padding-top as needed */
-    overflow: hidden;
+  /*  padding-top: 5rem;  Adjust padding-top as needed 
+    overflow: hidden; */
   }
 
 

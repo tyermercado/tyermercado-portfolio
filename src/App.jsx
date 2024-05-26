@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Preloader from "./components/preloader/Preloader"; 
 
+
 const App = () => {
   const [loading, setLoading] = useState(true);
 

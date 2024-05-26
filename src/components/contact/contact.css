@@ -53,6 +53,55 @@ textarea {
   color: var(--color-white);
 }
 
+/* Light mode styles */
+body.light-mode form {
+  background: var(--color-bg);
+  color: var(--color-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode form input,
+body.light-mode form textarea {
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  color: var(--color-white);
+}
+
+body.light-mode form input[type="text"],
+body.light-mode form input[type="email"],
+body.light-mode form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+body.light-mode form input[type="text"]:focus,
+body.light-mode form input[type="email"]:focus,
+body.light-mode form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+body.light-mode form button {
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode form button:hover {
+  background-color: var(--color-primary-variant);
+  color: var(--color-bg);
+}
+
+
+
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 @media screen and (max-width: 1024px) {
   .container.contact__container {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./nav.css";
 import { BiHome, BiUser, BiCodeAlt, BiMessageSquareDetail } from "react-icons/bi";
 import { AiOutlineFolderOpen } from "react-icons/ai";
+import ThemeToggle from "../theme/Theme";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#home");
@@ -83,6 +84,9 @@ const Nav = () => {
       >
         <BiMessageSquareDetail />
       </a>
+     
+      <ThemeToggle />
+
     </nav>
   );
 };

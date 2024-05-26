@@ -37,7 +37,7 @@
 
 .about__card {
   background: var(--color-bg-variant);
-  border: 1px solid transparent;
+  border: 1px solid var(--color-border); /* Add border color */
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
@@ -46,7 +46,6 @@
 
 .about__card:hover {
   background: transparent;
-  border-color: var(--color-primary-variant);
   cursor: default;
 }
 
@@ -66,13 +65,51 @@
 }
 
 .about__content p {
-  margin: 2rem 0 3.5rem ;
+  margin: 2rem 0 3.5rem;
   color: var(--color-light);
 }
 
 .about__content p > b {
   color: var(--color-primary);
 }
+
+/* Light mode styles for about section */
+body.light-mode .about__card {
+  background: var(--color-bg-light-variant);
+  border-color: var(--color-border-light); /* Add light mode border color */
+}
+
+body.light-mode .about__card:hover {
+  background: var(--color-bg-light);
+}
+
+body.light-mode .about__icon {
+  color: var(--color-primary-light);
+}
+
+body.light-mode .about__card small {
+  color: var(--color-dark-light);
+}
+
+body.light-mode .about__content p {
+  color: var(--color-dark-light);
+}
+
+body.light-mode .about__content p > b {
+  color: var(--color-primary-light);
+}
+
+
+/* Dark mode styles for about section */
+body.dark-mode .about__card {
+  background: var(--color-bg-dark-variant);
+  border-color: var(--color-border-dark); /* Add dark mode border color */
+}
+
+body.dark-mode .about__card:hover {
+  background: var(--color-bg-dark);
+}
+
 
 /* ========== MEDIA QUERIES (LARGE DEVICES) ========== */
 @media screen and (min-width: 1080px) and (max-width: 1920px) {
@@ -152,7 +189,47 @@
     color: var(--color-primary);
   }
 }
+/* ========== THEME ========== */
+body.light-mode {
+  background: var(--color-bg-light);
+  color: var(--color-dark);
+}
+body.light-mode h5 {
+  color: var(--color-dark);
+}
 
+body.light-mode a {
+  color: var(--color-primary-light);
+}
+
+body.light-mode a:hover {
+  color: var(--color-dark);
+}
+
+
+body.light-mode .btn {
+  color: var(--color-primary-light);
+  border: 1px solid var(--color-primary-light);
+}
+
+body.light-mode .btn:hover {
+  background: var(--color-dark);
+  color: var(--color-bg-light);
+  border-color: transparent;
+}
+
+body.light-mode .btn-primary {
+  background: var(--color-primary-light);
+  color: var(--color-bg-light);
+}
+
+body.light-mode section > h2 {
+  color: var(--color-primary-light);
+}
+
+body.light-mode .text-light {
+  color: var(--color-dark-light);
+}
 
 
 

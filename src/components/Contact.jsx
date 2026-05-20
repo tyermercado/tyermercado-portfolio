@@ -1,20 +1,26 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
+import { MdCheckCircleOutline } from "react-icons/md";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
+  const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
-      "service_7ye00hp",
-      "template_hk05l2m",
-      form.current,
-      "cPaptWu3U-dA9MYUB"
-    );
-    e.target.reset();
+    setSending(true);
+    emailjs
+      .sendForm("service_7ye00hp", "template_hk05l2m", form.current, "cPaptWu3U-dA9MYUB")
+      .then(() => {
+        setSent(true);
+        setSending(false);
+        e.target.reset();
+        setTimeout(() => setSent(false), 4000);
+      })
+      .catch(() => setSending(false));
   };
 
   return (
@@ -84,9 +90,17 @@ const Contact = () => {
               required
               className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-zinc-800 border border-black/[0.08] dark:border-white/[0.08] text-gray-900 dark:text-zinc-50 text-[0.875rem] placeholder-gray-400 dark:placeholder-zinc-500 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 focus:bg-blue-500/5 dark:focus:bg-blue-400/10 transition-all duration-200 resize-none"
             />
-            <button type="submit" className="btn-primary self-start">
-              Send Message
-            </button>
+            <div className="flex items-center gap-3">
+              <button type="submit" disabled={sending} className="btn-primary self-start disabled:opacity-60 disabled:cursor-not-allowed">
+                {sending ? "Sending..." : "Send Message"}
+              </button>
+              {sent && (
+                <span className="flex items-center gap-1.5 text-[0.8rem] text-green-500 dark:text-green-400 font-medium animate-fade-in">
+                  <MdCheckCircleOutline className="text-[1rem]" />
+                  Message sent!
+                </span>
+              )}
+            </div>
           </form>
         </div>
       </div>

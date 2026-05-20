@@ -7,12 +7,12 @@ import IMG4 from "../assets/brgysanroque.png";
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: "Library Management System",
-    url: "github.com/tyermercado/library-management-system",
+    image: IMG4,
+    title: "Barangay San Roque Web Portal",
+    url: "barangaysanroque.com",
     description:
-      "Utilizes XML and XSLT to manage book borrowing. Tracks borrowing duration, fine details, and unique book IDs.",
-    github: "https://github.com/tyermercado/Library-management-system",
+      "Laravel-based website and admin system for publishing announcements and events, showcasing officials and committees, and managing resident document requests with reference tracking and dark mode support.",
+    demo: "https://barangaysanroque.com",
   },
   {
     id: 2,
@@ -34,12 +34,12 @@ const data = [
   },
   {
     id: 4,
-    image: IMG4,
-    title: "Barangay San Roque Web Portal",
-    url: "barangaysanroque.com",
+    image: IMG1,
+    title: "Library Management System",
+    url: "github.com/tyermercado/library-management-system",
     description:
-      "Laravel-based website and admin system for publishing announcements and events, showcasing officials and committees, and managing resident document requests with reference tracking and dark mode support.",
-    demo: "https://barangaysanroque.com",
+      "Utilizes XML and XSLT to manage book borrowing. Tracks borrowing duration, fine details, and unique book IDs.",
+    github: "https://github.com/tyermercado/Library-management-system",
   },
 ];
 

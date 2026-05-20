@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
+const sections = ["home", "about", "experience", "portfolio", "contact"];
+
 const Footer = () => {
+  const [active, setActive] = useState("home");
+
+  useEffect(() => {
+    const observers = sections.map((id) => {
+      const el = document.getElementById(id);
+      if (!el) return null;
+      const observer = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setActive(id); },
+        { rootMargin: "-40% 0px -55% 0px" }
+      );
+      observer.observe(el);
+      return observer;
+    });
+    return () => observers.forEach((o) => o?.disconnect());
+  }, []);
+
   return (
     <footer className="border-t border-black/[0.08] dark:border-white/[0.08] py-5 mt-2">
       <div className="max-w-page mx-auto px-8 sm:px-6 flex flex-wrap items-center justify-between gap-4">
@@ -13,11 +31,15 @@ const Footer = () => {
         </a>
 
         <ul className="flex gap-5 flex-wrap">
-          {["home", "about", "experience", "portfolio", "contact"].map((s) => (
+          {sections.map((s) => (
             <li key={s}>
               <a
                 href={`#${s}`}
-                className="text-[0.78rem] capitalize text-gray-400 dark:text-zinc-500 hover:text-gray-900 dark:hover:text-zinc-50 transition-all duration-200"
+                className={`text-[0.78rem] capitalize transition-all duration-200 ${
+                  active === s
+                    ? "text-gray-900 dark:text-zinc-50 font-medium"
+                    : "text-gray-400 dark:text-zinc-500 hover:text-gray-900 dark:hover:text-zinc-50"
+                }`}
               >
                 {s === "experience" ? "Tech Stack" : s.charAt(0).toUpperCase() + s.slice(1)}
               </a>

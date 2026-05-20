@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/tyermercado-portfolio/static/css/main.e825d9a4.css",
-    "main.js": "/tyermercado-portfolio/static/js/main.9518580b.js",
-    "static/media/Library.png": "/tyermercado-portfolio/static/media/Library.faabe1816de7e4d4cff5.png",
-    "static/media/brgysanroque.png": "/tyermercado-portfolio/static/media/brgysanroque.0cb5279482fe8b3a826e.png",
-    "static/media/Bicycle.png": "/tyermercado-portfolio/static/media/Bicycle.9f527427f708c1058d0e.png",
-    "static/media/sneakers_ecommerce.png": "/tyermercado-portfolio/static/media/sneakers_ecommerce.938ab2e45637aa420d07.png",
-    "static/media/Tyer_CV.pdf": "/tyermercado-portfolio/static/media/Tyer_CV.e014cc230067c93c5bd3.pdf",
-    "static/media/tyer.png": "/tyermercado-portfolio/static/media/tyer.7f0a84a6f31f84ef77c3.png",
-    "index.html": "/tyermercado-portfolio/index.html",
-    "main.e825d9a4.css.map": "/tyermercado-portfolio/static/css/main.e825d9a4.css.map",
-    "main.9518580b.js.map": "/tyermercado-portfolio/static/js/main.9518580b.js.map"
+    "main.css": "/static/css/main.e825d9a4.css",
+    "main.js": "/static/js/main.c402eb5b.js",
+    "static/media/Library.png": "/static/media/Library.faabe1816de7e4d4cff5.png",
+    "static/media/brgysanroque.png": "/static/media/brgysanroque.0cb5279482fe8b3a826e.png",
+    "static/media/Bicycle.png": "/static/media/Bicycle.9f527427f708c1058d0e.png",
+    "static/media/sneakers_ecommerce.png": "/static/media/sneakers_ecommerce.938ab2e45637aa420d07.png",
+    "static/media/Tyer_CV.pdf": "/static/media/Tyer_CV.e014cc230067c93c5bd3.pdf",
+    "static/media/tyer.png": "/static/media/tyer.7f0a84a6f31f84ef77c3.png",
+    "index.html": "/index.html",
+    "main.e825d9a4.css.map": "/static/css/main.e825d9a4.css.map",
+    "main.c402eb5b.js.map": "/static/js/main.c402eb5b.js.map"
   },
   "entrypoints": [
     "static/css/main.e825d9a4.css",
-    "static/js/main.9518580b.js"
+    "static/js/main.c402eb5b.js"
   ]
 }

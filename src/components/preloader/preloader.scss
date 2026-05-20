@@ -134,33 +134,3 @@
     margin: 0 16px;
 }
 
-html {
-    -webkit-font-smoothing: antialiased;
-}
-
-* {
-    box-sizing: border-box;
-    &:before,
-    &:after {
-        box-sizing: border-box;
-    }
-}
-
-
-body {
-    min-height: 100vh;
-    background: #F5F9FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .dribbble {
-        position: fixed;
-        display: block;
-        right: 20px;
-        bottom: 20px;
-        img {
-            display: block;
-            height: 28px;
-        }
-    }
-}
